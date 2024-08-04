@@ -3,8 +3,19 @@
    <h1>Under Maintenance</h1>
  </center> 
 
-<audio loop="true" id="audio">
+<body>
+    <audio loop="true" id="audio">
         <source src="media/music.mp3" type="audio/mpeg">
     </audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('audio');
+            audio.play().catch(function(error) {
+                console.log('Autoplay was prevented:', error);
+            });
+        });
+    </script>
+</body>
  
 </html>
