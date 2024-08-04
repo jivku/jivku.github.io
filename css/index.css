@@ -1,0 +1,19 @@
+/* Change cursor to a pointer when hovering over links */
+a {
+  cursor: pointer;
+}
+
+/* Change cursor to a crosshair when hovering over a specific class */
+.crosshair-cursor {
+  cursor: crosshair;
+}
+
+/* Change cursor to a custom image */
+.custom-cursor {
+  cursor: url('../knife.cur'), auto;
+}
+
+/* Change cursor to a wait (hourglass) symbol */
+.wait-cursor {
+  cursor: wait;
+}
