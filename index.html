@@ -1,0 +1,54 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/title.js"></script> 
+</head>
+
+    <body style="overflow:hidden">
+        <div id="loading-screen" class="loading-screen">
+            <button class="ascii" id="start-button">Click me :)</button>
+        </div>        
+        <audio id="background-music" src="media/valdz.mp3"></audio>
+        <script src="popup.js"></script>
+        <script>
+            document.getElementById('start-button').addEventListener('click', function() {
+              var music = document.getElementById('background-music');
+              music.play();
+        
+              var loadingScreen = document.getElementById('loading-screen');
+              loadingScreen.classList.add('fade-out');
+        
+              setTimeout(function() {
+                loadingScreen.style.display = 'none';
+              }, 1000);
+              showErrorMessage(0);
+            });
+          </script>
+        <canvas class="dots" id="dots"></canvas>
+        <div>
+            <center>
+                <p>&nbsp;</p>
+                <pre class="ascii" id="ascii">
+
+ ____   _________  .____     ________  __________
+ \   \ /   /  _  \ |    |    \______ \ \____    /
+  \   Y   /  /_\  \|    |     |    |  \  /     / 
+   \     /    |    \    |___  |    `   \/     /_ 
+    \___/\____|__  /_______ \/_______  /_______ \
+                 \/        \/        \/        \/
+</pre>
+                <pre class="ascii" id="txt">
+Registered Sex Offender
+
+Professional Manipulator
+
+ඞ
+                </pre>
+            </center>
+        </div>
+        <script src="js/dots2.js"></script>
+        <script src="js/sparkles_rb.js"></script>
+        <script src="js/popup.js"></script>
+        <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
+    </body>
+</html>
